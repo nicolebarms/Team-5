@@ -29,17 +29,17 @@ for i in range(len(filenames)): #the loop is as long as the number or filenames
     print(filenames[i]) #print current filename
     
     # the option below will import all the text as 1 string, better to use 'lines'
-    #with open(filenames[i], 'r') as file: #statement to open the file and read the text
+    # with open(filenames[i], 'r') as file: #statement to open the file and read the text
     #    text = file.read() #text hold the intire content of the n-th .dat file
     #    print(text)
-    #x1 = text.find("Customer ID: ") #find where these strings start
-    #x2 = text.find("Invoice ID: ")  #within the .dat file contents
-    #x3 = text.find("Product Rating: ")
+    # x1 = text.find("Customer ID: ") #find where these strings start
+    # x2 = text.find("Invoice ID: ")  #within the .dat file contents
+    # x3 = text.find("Product Rating: ")
     
     with open(filenames[i], 'r') as file: #statement to open the file and read the text
         lines = file.readlines() #text hold the intire content of the n-th .dat file
     
-    #lenght of each line includes 1 additional charater which is the break \n
+    # lenght of each line includes 1 additional charater which is the break \n
     
     # obtain a substring with only the customer, invoice, and rating values
     temp = lines[0]
